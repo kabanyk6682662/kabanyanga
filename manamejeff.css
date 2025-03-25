@@ -8,6 +8,17 @@ body {
     background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
     animation: colorChange 10s linear infinite; /* Animation setup */
 }
+@keyframes fire {
+  0% { text-shadow: 0 0 10px #ff0, 0 0 20px #ff8000, 0 0 30px #ff4500; }
+  50% { text-shadow: 0 0 20px #ff8000, 0 0 30px #ff4500, 0 0 40px #ff0000; }
+  100% { text-shadow: 0 0 10px #ff0, 0 0 20px #ff8000, 0 0 30px #ff4500; }
+}
+.fire-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  animation: fire 1s infinite alternate;
+}
 
 /* Animation definition */
 @keyframes colorChange {
